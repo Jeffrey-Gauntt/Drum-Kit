@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Drum Kit</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="javascript/jquery.rwdImageMaps.min.js"></script>
+  <script src="javascript/jquery.maphilight.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="drumContainer">
+        <h1 class="instructions">Click on drum kit OR hit keys to play</h1>
+        <img src="photos/drummerView_1_keys_1.jpg" id="drumMap" class="drumMap" usemap="#drumMap">
+        <map name="drumMap">
+            <area id="72" onclick="play(this.title); clickVisual(this.id);" title="Snare" coords="340,1028,353,958,391,904,447,863,517,843,581,843,632,860,676,891,700,933,713,986,706,1026" shape="poly">
+            <area id="78" onclick="play(this.title); clickVisual(this.id);" title="Floor Tom" coords="846,1026,830,991,839,937,866,900,900,875,943,854,987,848,1036,851,1080,858,1125,877,1152,897,1177,923,1193,955,1199,989,1196,1026" shape="poly">
+            <area id="71" onclick="play(this.title); clickVisual(this.id);" title="Closed Hi Hat" coords="3,718,57,700,118,693,175,693,224,701,259,727,273,756,265,789,247,814,220,841,181,866,136,888,94,903,51,915,23,922,3,923" shape="poly">
+            <area id="66" onclick="play(this.title); clickVisual(this.id);" title="Tom Tom 1" coords="436,633,451,597,484,560,528,538,577,532,625,538,665,562,700,593,714,636,709,675,694,717,661,749,620,771,577,777,529,767,483,745,450,708,436,675" shape="poly">
+            <area id="51" onclick="play(this.title); clickVisual(this.id);" title="Splash" coords="32,558,79,530,129,518,177,514,225,518,255,527,279,540,290,566,268,595,239,610,209,621,165,630,118,627,65,619,32,597,23,573" shape="poly">
+            <area id="69" onclick="play(this.title); clickVisual(this.id);" title="Crash 1" coords="150,344,188,319,233,306,284,296,325,293,373,295,421,301,462,311,499,325,525,347,528,373,503,403,479,422,432,436,381,444,325,448,270,444,223,434,177,418,143,389,139,363" shape="poly">
+            <area id="73" onclick="play(this.title); clickVisual(this.id);" title="Crash 2" coords="989,369,1030,338,1088,322,1145,314,1203,314,1258,322,1310,332,1354,347,1392,367,1423,395,1433,412,1432,436,1416,455,1384,475,1344,490,1293,501,1223,504,1156,499,1089,484,1045,467,1004,441,981,400" shape="poly">
+            <area id="84" onclick="play(this.title); clickVisual(this.id);" title="Cymbal Scrape" coords="589,332,635,307,714,295,791,296,851,306,903,321,945,347,954,370,937,392,896,410,826,426,752,423,684,416,631,400,591,374,580,353" shape="poly">
+            <area id="82" onclick="play(this.title); clickVisual(this.id);" title="Small Crash 1" coords="425,449,446,441,474,433,492,426,516,412,526,393,551,389,579,388,598,392,614,403,631,411,655,418,681,423,710,429,709,449,684,474,657,485,618,495,576,499,526,500,479,490,447,478,428,464" shape="poly">
+            <area id="85" onclick="play(this.title); clickVisual(this.id);" title="Small Crash 2" coords="811,434,833,433,862,429,893,422,918,412,941,401,955,386,974,388,976,403,981,422,993,440,1011,455,1036,471,1060,484,1082,492,1107,497,1071,512,1025,519,974,519,930,517,885,503,847,485,821,462" shape="poly">
+            <area id="76" onclick="play(this.title); clickVisual(this.id);" title="Gong" coords="1544,648,1504,625,1469,588,1452,549,1452,506,1469,470,1495,443,1525,415,1544,408" shape="poly">
+            <area id="75" onclick="play(this.title); clickVisual(this.id);" title="Large Ride" coords="781,626,833,595,907,577,978,574,1048,586,1104,604,1158,644,1192,688,1196,737,1170,780,1129,807,1085,826,1033,836,980,836,921,827,865,811,818,791,781,756,759,721,752,680,761,655" shape="poly">
+            <area id="70" onclick="play(this.title); clickVisual(this.id);" title="Open Hi Hat" coords="1241,745,1260,723,1299,708,1337,706,1377,710,1421,714,1464,726,1500,738,1525,751,1547,763,1547,926,1501,923,1445,911,1396,896,1348,875,1306,847,1265,814,1240,782" shape="poly">
+            <area id="32" onclick="play(this.title); clickVisual(this.id);" title="Bass Drum" coords="680,810,699,767,707,725,724,690,741,690,752,725,774,763,803,791,833,811,876,827,918,843,891,855,869,871,841,892,826,911,815,945,814,974,817,999,828,1018,720,1021,729,967,709,914,681,871,636,844" shape="poly">
+            <area id="86" onclick="play(this.title); clickVisual(this.id);" title="Large Cow Bell" coords="261,632,288,625,313,621,329,623,357,664,361,701,327,708,287,714,257,711,251,673" shape="poly">
+            <area id="67" onclick="play(this.title); clickVisual(this.id);" title="Small Cow Bell" coords="342,555,364,551,381,548,398,549,428,590,431,614,402,626,369,627,343,627,338,603" shape="poly">
+            <area id="77" onclick="play(this.title); clickVisual(this.id);" title="Tamborine" coords="1334,1021,1341,975,1369,944,1404,925,1437,918,1470,929,1508,938,1542,938,1542,1022" shape="poly">
+            <area id="74" onclick="play(this.title); clickVisual(this.id);" title="Clap" coords="196,871,233,840,261,823,324,900,324,914,255,949" shape="poly">
+        </map>
+    </main>
+
+
+    <audio data-key="70" class="Open Hi Hat" src="sounds/openHiHat.wav"></audio>
+    <audio data-key="71" class="Closed Hi Hat" src="sounds/closedHiHat.wav"></audio>
+    <audio data-key="69" class="Crash 1" src="sounds/crash_1and2.wav"></audio>
+    <audio data-key="73" class="Crash 2" src="sounds/crash_1and2.wav"></audio>
+    <audio data-key="72" class="Snare" src="sounds/snare_3.wav"></audio>
+    <audio data-key="74" class="Clap" src="sounds/clap_1.wav"></audio>
+    <audio data-key="67" class="Small Cow Bell" src="sounds/smallCowBell.wav"></audio>
+    <audio data-key="86" class="Large Cow Bell" src="sounds/largeCowBell.wav"></audio>
+    <audio data-key="82" class="Small Crash 1" src="sounds/smallCrash.mp3"></audio>
+    <audio data-key="85" class="Small Crash 2" src="sounds/smallCrash.mp3"></audio>
+    <audio data-key="84" class="Cymbal Scrape" src="sounds/cymbalScrape.mp3"></audio>
+    <audio data-key="75" class="Large Ride" src="sounds/large_ride_1.wav"></audio>
+    <audio data-key="76" class="Gong" src="sounds/gong.mp3"></audio>
+    <audio data-key="77" class="Tamborine" src="sounds/tamborine.wav"></audio>
+    <audio data-key="51" class="Splash" src="sounds/splash.wav"></audio>
+    <audio data-key="66" class="Tom Tom 1" src="sounds/tomTom1.wav"></audio>
+    <audio data-key="78" class="Floor Tom" src="sounds/floorTom.wav"></audio>
+    <audio data-key="32" class="Bass Drum" src="sounds/kick_2.wav"></audio>
+
+<script>
+
+// map resizing
+$(document).ready(function(e) {
+	$('img[usemap]').rwdImageMaps();
+});
+
+//drum kit highlight
+$(function() {
+  $('img[usemap]').maphilight({
+      fillColor: 'cedd00',
+  });
+});
+
+//using keyboard
+window.addEventListener('keydown', function(e){
+
+    //play instrument
+    const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+    if(!audio) return;
+    audio.currentTime = 0;
+    audio.play();
+    
+    //highlight instrument
+    $(`#${e.keyCode}`).mouseover();
+
+    //unhighlight instrument
+    window.addEventListener('keyup', function(e){
+        $(`#${e.keyCode}`).mouseout();
+    });
+});
+
+//unhighlight and rehighlight when clicking instrument
+function clickVisual(id){
+    $(`#${id}`).mouseout();
+    $(`#${id}`).mouseover();
+}
+
+// playing instrument
+function play(instrument){
+    const audio = document.querySelector(`audio[class="${instrument}"]`);
+    if(!audio) return;
+    audio.currentTime = 0;
+    audio.play();
+}
+
+</script>
+</body>
+</html>

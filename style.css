@@ -1,0 +1,39 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html {
+    /* border: 1px yellow solid; */
+    background-color: black;
+    /* height: 100vh; */
+    /* width: 100vw; */
+}
+
+
+.drumContainer {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+}
+
+.instructions {
+    position: absolute;
+    align-self: flex-start;
+    background-color: white;
+    border: 1px yellowgreen solid;
+    z-index: 1;
+    margin-top: 5vh;
+}
+
+.drumMap {
+    max-width: 100vw;
+    max-height: 100vh;
+    display: block;
+}
+
+area:hover {cursor: pointer; background-color: green;}
