@@ -36,4 +36,6 @@ html {
     display: block;
 }
 
+area {z-index: 2;}
+
 area:hover {cursor: pointer; background-color: green;}
